@@ -1,0 +1,32 @@
+.button {
+  border-radius: 100px;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: .3s;
+}
+
+.button_type_login {
+  width: 176px;
+  height: 48px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.button_type_login:hover {
+  opacity: .8;
+}
+
+.button_type_search {
+  width: 168px;
+  height: 64px;
+  background: #2F71E5;
+  border: none;
+  color: #fff;
+}
+
+.button_type_search:hover {
+  background: #347EFF;
+}

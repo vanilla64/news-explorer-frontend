@@ -1,0 +1,50 @@
+.header {
+  margin: 0 auto;
+  background-image: url('../../images/header-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 96vh;
+}
+
+.header__navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 19px 104px 13px;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+.header__logo {
+  max-width: 200px;
+  height: 24px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.header__navigation {
+  display: flex;
+}
+
+.header__list {
+  display: flex;
+  list-style-type: none;
+}
+
+.header__navlink {
+  margin: 0 34px 0 0;
+  text-decoration: none;
+  color: #fff;
+  transition: .3s;
+}
+.header__navlink:hover {
+  opacity: .8;
+}
+
+.header__navlink:last-child {
+  margin: 0 32px 0 0;
+}
