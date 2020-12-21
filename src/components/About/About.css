@@ -1,0 +1,41 @@
+.about {
+  display: flex;
+  margin: 0 auto;
+  padding: 80px 104px;
+  color: #1A1B22;
+}
+
+.about__img {
+  margin: 0 54px 0 0;
+  width: 464px;
+  height: 464px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.about__heading {
+  margin: 51px 0 0;
+  width: 48.7%;
+}
+
+.about__title {
+  margin: 0 0 24px;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 46px;
+}
+
+.about__text {
+  margin: 0 0 26px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.about__text:last-child {
+  margin: 0;
+}

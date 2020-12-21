@@ -3,11 +3,12 @@ import './Button.css'
 
 function Button(props) {
   return (
-    <button className={`button button_type_${props.classType}`}>
-      { props.classType === 'login' && 'Авторизироваться' }
-      { props.classType === 'search' && 'Искать' }
+    <button
+      onClick={props.onClick}
+      className={`button button_type_${props.classType}`}>
+      { props.text }
     </button>
   );
-}
+};
 
 export default Button;

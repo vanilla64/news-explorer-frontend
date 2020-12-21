@@ -1,0 +1,120 @@
+.card {
+  max-width: 400px;
+  max-height: 576px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card__auth-warning {
+  width: 182px;
+  height: 40px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 22px rgba(59, 74, 116, 0.1);
+  border-radius: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: .3s;
+  opacity: 0;
+  position: absolute;
+  top: 24px;
+  right: 69px;
+}
+
+.card__auth-warning_active {
+  opacity: 1;
+}
+
+.card__figure {
+  margin: 0;
+}
+
+.card__img {
+  width: 100%;
+  max-height: 272px;
+}
+
+.card__caption {
+  margin: 20px 0 12px 24px;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #B6BCBF;
+}
+
+.card__heading {
+  padding: 0 24px 24px;
+}
+
+.card__title {
+  margin: 0 0 16px;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  color: #1A1B22;
+}
+
+.card__text {
+  margin: 0 0 18px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1A1B22;
+}
+
+.card__source {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #B6BCBF;
+}
+
+.card__bookmark-container {
+  background-image: url('../../images/bookmark-icon-normal.svg');
+  background-size: 14px 19px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  position: absolute;
+  top:24px;
+  right: 24px;
+  transition: .3s;
+}
+
+.card__bookmark-container:hover {
+  background-image: url('../../images/bookmark-icon-hover.svg');
+}
+
+.card__bookmark-container_type_marked {
+  background-image: url('../../images/bookmark-icon-marked.svg');
+}
+
+.card__bookmark-container_type_marked:hover {
+  background-image: url('../../images/bookmark-icon-marked.svg');
+  background-color: rgba(256, 256, 256, .9);
+}
