@@ -3,7 +3,13 @@ import './Preloader.css'
 
 function Preloader(props) {
   return (
-    <i className="preloader"></i>
+    <section className={
+      props.isLoading
+        ? 'preloader preloader_active'
+        : 'preloader'}>
+      <div className="preloader__item"></div>
+      <p className="preloader__text">Идет поиск новостей...</p>
+    </section>
   );
 }
 

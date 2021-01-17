@@ -1,3 +1,9 @@
+.searchform {
+  display: flex;
+  flex-direction: column;
+
+}
+
 .searchform__label {
   width: 100%;
   display: flex;
@@ -24,4 +30,21 @@
   font-size: 16px;
   line-height: 22px;
   color: #B6BCBF;
+}
+
+@media screen and (max-width: 600px){
+  /*.searchform {*/
+  /*  !*display: flex;*!*/
+  /*  flex-direction: column;*/
+  /*}*/
+
+  .searchform__label {
+    flex-direction: column;
+  }
+
+  .searchform__input {
+    margin: 0 0 16px;
+    position: static;
+    width: calc(100% - 24px);
+  }
 }

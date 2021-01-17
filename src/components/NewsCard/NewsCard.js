@@ -3,9 +3,9 @@ import './NewsCard.css'
 
 function NewsCard(props) {
   const [isMarked, setIsMarked] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
-  function handleClick() {
+  function handleBookmarkClick() {
     if (isMarked) {
       setIsMarked(false)
       return;
@@ -13,7 +13,15 @@ function NewsCard(props) {
     setIsMarked(true)
   }
 
+  function handleTrashClick(evt) {
+    const currentCard = evt.target.closest('.card')
+    currentCard.remove()
+  }
+
   function handleMouseEnter() {
+    if (isMarked) {
+      return;
+    }
     setIsOpen(true)
   }
 
@@ -23,24 +31,54 @@ function NewsCard(props) {
 
   return (
     <li className="card">
-      <div className="card__keyword">
-        { props.keyword }
-      </div>
-      <div className={isOpen
-        ? 'card__auth-warning card__auth-warning_active'
-        : 'card__auth-warning'}>
-        Войдите, чтобы сохранять статьи
-      </div>
-      <div
-        onClick={ handleClick }
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-        className={
-          isMarked
-            ? 'card__bookmark-container card__bookmark-container_type_marked'
-            : 'card__bookmark-container'
-        }>
-      </div>
+      { props.isSaved ?
+        <p className="card__keyword">
+          { props.keyword }
+        </p> : null
+
+
+      }
+
+      {
+        props.isLoggedIn
+        ?
+          null
+          :
+          <p className={isOpen
+            ? `
+          card__warning
+          card__warning_active
+          card__warning_is-saved_${props.isSaved}
+          `
+            : 'card__warning'}>
+            { props.isSaved
+              ? 'Убрать из сохранённых'
+              : 'Войдите, чтобы сохранять статьи' }
+          </p>
+      }
+
+      {
+        props.isSaved
+          ?
+          <button
+            onClick={handleTrashClick}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            className={'card__button card__button_type_trash'}>
+          </button>
+          :
+          <button
+            // onClick={handleBookmarkClick}
+            onClick={props.isLoggedIn ? handleBookmarkClick : null}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            className={
+              isMarked
+                ? 'card__button card__button_type_bookmark_is-marked_true'
+                : 'card__button card__button_type_bookmark_is-marked_false'}>
+          </button>
+      }
+
       <figure className="card__figure">
         <img className="card__img" src={ props.image } alt="Заглавное фото статьи"/>
         <figcaption className="card__caption">{ props.date }</figcaption>

@@ -6,7 +6,7 @@ function Button(props) {
     <button
       onClick={props.onClick}
       className={`button button_type_${props.classType}`}>
-      { props.text }
+      { props.children }
     </button>
   );
 };

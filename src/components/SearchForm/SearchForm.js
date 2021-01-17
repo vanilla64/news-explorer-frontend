@@ -7,8 +7,7 @@ function SearchForm(props) {
 
   function handleSubmit(evt) {
     evt.preventDefault()
-    console.log('Submit')
-    props.handleSubmit()
+    props.onNewsVisible()
   }
 
   return (
@@ -24,8 +23,11 @@ function SearchForm(props) {
         <Button
           type="submit"
           classType={'search'}
-          text={'Искать'}
-        />
+        >
+          <>
+            <p className="button__text">Искать</p>
+          </>
+        </Button>
       </label>
     </form>
   );

@@ -2,7 +2,7 @@ import React from 'react';
 import PopupWithForm from "../PopupWithForm/PopupWithForm";
 import Button from "../Button/Button";
 
-function LoginPopup(props) {
+function RegisterPopup(props) {
   return (
     <PopupWithForm
       onOverlayClose={props.onOverlayClose}
@@ -35,13 +35,13 @@ function LoginPopup(props) {
           </span>
         </label>
         <Button classType={'auth'}>
-          <p className="button__text">Войти</p>
+          <p className="button__text">Зарегистрироваться</p>
         </Button>
         <p className="popup__text">
-          или <span className="popup__link" onClick={props.onLinkClick}>Зарегистрироваться</span></p>
+          или <span className="popup__link" onClick={props.onLinkClick}>Войти</span></p>
       </>
     </PopupWithForm>
   );
 }
 
-export default LoginPopup;
+export default RegisterPopup;

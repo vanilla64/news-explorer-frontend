@@ -39,3 +39,47 @@
 .about__text:last-child {
   margin: 0;
 }
+
+@media screen and (max-width: 1024px) {
+  .about {
+    padding: 40px 40px 61px;
+  }
+
+  .about__img {
+    margin: 0 32px 0 0;
+    max-width: 332px;
+    max-height: 332px;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about__img {
+    max-width: 232px;
+    max-height: 232px;
+  }
+
+  .about__heading {
+    margin: 0;
+    width: 100%;
+  }
+
+  .about__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0 0 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about {
+    flex-direction: column;
+    padding: 32px 16px 80px;
+  }
+
+  .about__img {
+    max-width: 272px;
+    max-height: 272px;
+    margin: 0 0 24px;
+  }
+}
