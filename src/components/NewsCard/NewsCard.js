@@ -3,7 +3,7 @@ import './NewsCard.css'
 
 function NewsCard(props) {
   const [isMarked, setIsMarked] = useState(false);
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   function handleBookmarkClick() {
     if (isMarked) {
@@ -35,8 +35,6 @@ function NewsCard(props) {
         <p className="card__keyword">
           { props.keyword }
         </p> : null
-
-
       }
 
       {
@@ -83,11 +81,15 @@ function NewsCard(props) {
         <img className="card__img" src={ props.image } alt="Заглавное фото статьи"/>
         <figcaption className="card__caption">{ props.date }</figcaption>
       </figure>
-      <div className="card__heading">
-        <h3 className="card__title">{ props.title }</h3>
-        <p className="card__text">{ props.text }</p>
+      <div className="card__container">
+        <div className="card__heading">
+          <h3 className="card__title">{ props.title }</h3>
+          <span className="card__text">{ props.text }</span>
+        </div>
+
         <span className="card__source">{ props.source }</span>
       </div>
+      {/*<span className="card__source">{ props.source }</span>*/}
     </li>
   );
 }

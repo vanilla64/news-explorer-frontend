@@ -17,6 +17,7 @@ function LoginPopup(props) {
           <input
             className="popup__input"
             type="email"
+            name="email"
             placeholder="Введите почту"
           />
           <span className="popup__error">
@@ -28,6 +29,7 @@ function LoginPopup(props) {
           <input
             className="popup__input"
             type="password"
+            name="password"
             placeholder="Введите пароль"
           />
           <span className="popup__error">

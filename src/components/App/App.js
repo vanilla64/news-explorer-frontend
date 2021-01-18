@@ -16,7 +16,7 @@ function App(props) {
 
   // Стейт для отображения блока с новостями
   // который будет задействован в следующем этапе диплома
-  const [isNewsVisible, setIsNewsVisible] = useState(false);
+  const [isNewsVisible, setIsNewsVisible] = useState(true);
 
   // Стейт для отображения прелоудера
   // который будет задействован в следующем этапе диплома
