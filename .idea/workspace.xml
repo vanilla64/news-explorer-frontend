@@ -2,33 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06322c61-b3bd-4c8d-ac21-d905f7943571" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/fonts/inter-regular-font.woff" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Button/Button.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/Button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoginPopup/LoginPopup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoginPopup/LoginPopup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainHeader/MainHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainHeader/MainHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MenuBurger/MenuBurger.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MenuBurger/MenuBurger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewsCard/NewsCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewsCard/NewsCard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewsCard/NewsCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewsCard/NewsCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewsCardList/NewsCardList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewsCardList/NewsCardList.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewsCardList/NewsCardList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewsCardList/NewsCardList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PopupWithForm/PopupWithForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopupWithForm/PopupWithForm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PopupWithForm/PopupWithForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopupWithForm/PopupWithForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RegisterPopup/RegisterPopup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RegisterPopup/RegisterPopup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SavedNewsHeader/SavedNewsHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SavedNewsHeader/SavedNewsHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SavedNewsList/SavedNewsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SavedNewsList/SavedNewsList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchForm/SearchForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchForm/SearchForm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchForm/SearchForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchForm/SearchForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/Inter-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/fonts/fonts.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/card/card/image_04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/card/card/image_07.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/card/card/image_08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/About.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,6 +86,7 @@
       <workItem from="1612807451557" duration="4903000" />
       <workItem from="1613070395478" duration="8985000" />
       <workItem from="1613297304776" duration="32956000" />
+      <workItem from="1613409954221" duration="148000" />
     </task>
     <servers />
   </component>
