@@ -101,6 +101,7 @@
 .popup__label {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .popup__input-name {
@@ -115,7 +116,7 @@
 
 .popup__input {
   padding: 0 0 10px;
-  margin: 0 0 3px;
+  margin: 0 0 23px;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, .2);
   outline-style: none;
@@ -140,14 +141,30 @@
 }
 
 .popup__error {
-  margin: 0 0 13px;
+  /*margin: 0 0 13px;*/
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
   color: #FF0000;
+  opacity: 0;
+  transition: .3s;
+  position: absolute;
+  top: 55px;
+
 }
+
+.popup__error_visible {
+  opacity: 1;
+}
+
+/*.popup__error_type_server-err {*/
+/*  text-align: center;*/
+/*  width: 240px;*/
+/*  top: 80px;*/
+/*  left: calc(50% - 120px);*/
+/*}*/
 
 .popup__link {
   text-decoration: none;

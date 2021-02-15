@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Header.css'
 import Navigation from "../Navigation/Navigation";
 import { NavLink, Route } from "react-router-dom";
 import Button from "../Button/Button";
 import whiteLogout from "../../images/logout-white.svg";
 import blackLogout from "../../images/logout-black.svg";
+import CurrentUserContext from "../../contexts/CurrentUserContext";
 
 function Header(props) {
+  const userName = useContext(CurrentUserContext);
+
   const classNames = {
     header: props.isMain
       ? 'header header_type_main'
@@ -90,7 +93,7 @@ function Header(props) {
                 <p className="button__text">
                   {
                     props.isLoggedIn
-                      ?  props.userName
+                      ?  userName
                       : 'Авторизоваться'
                   }
                 </p>
@@ -113,7 +116,7 @@ function Header(props) {
                 <p className="button__text">
                   {
                     props.isLoggedIn
-                      ?  props.userName
+                      ?  userName
                       : 'Авторизоваться'
                   }
                 </p>

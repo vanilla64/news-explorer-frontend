@@ -196,6 +196,21 @@ button_type_burger_color_black {
   background: #2A65CC;
 }
 
+.button_type_auth_disabled {
+  margin: 25px 0 0;
+  width: 360px;
+  height: 64px;
+  border: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #B6BCBF;
+  background: #E6E8EB;
+  cursor: auto;
+}
+
 .button__text {
   margin: 0;
   padding: 0;

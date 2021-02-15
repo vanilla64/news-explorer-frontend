@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './MenuBurger.css'
 import Button from "../Button/Button";
 import Navigation from "../Navigation/Navigation";
 import {NavLink} from "react-router-dom";
 import whiteLogout from "../../images/logout-white.svg";
+import CurrentUserContext from "../../contexts/CurrentUserContext";
 
 function MenuBurger(props) {
+  const userName = useContext(CurrentUserContext)
   return (
     <section className={
       props.isBurgerOpen
@@ -42,7 +44,7 @@ function MenuBurger(props) {
             <p className="button__text">
               {
                 props.isLoggedIn
-                  ?  props.userName
+                  ?  userName
                   : 'Авторизоваться'
               }
             </p>

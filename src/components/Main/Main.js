@@ -19,11 +19,25 @@ function Main(props) {
           isLoggedIn={props.isLoggedIn}
           isLoading={props.isLoading}
           isNewsVisible={props.newsVisible}
+          newsList={props.newsList}
+          keyword={props.keyword}
+          token={props.token}
+          onShowMoreClick={props.onShowMoreClick}
+          isShowMoreButtonVisible={props.isShowMoreButtonVisible}
+          onBookmarkClick={props.onBookmarkClick}
+          handleBookmarkClick={props.onBookmarkClick}
         />
         <About />
       </Route>
       <Route path="/saved-news">
-        <SavedNewsList />
+        <SavedNewsList
+          onTrashClick={props.onTrashClick}
+          token={props.token}
+          savedArticles={props.savedArticles}
+          setSavedArticles={props.setSavedArticles}
+          onShowMoreClick={props.onShowMoreClick}
+          isSavedNewsButtonVisible={props.isSavedNewsButtonVisible}
+        />
       </Route>
     </main>
   );
