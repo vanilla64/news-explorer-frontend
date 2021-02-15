@@ -52,12 +52,19 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 654px) {
   .news-list {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
   }
 }
+
+/*@media screen and (max-width: 600px) {*/
+/*  .news-list {*/
+/*    grid-template-columns: repeat(2, 1fr);*/
+/*    grid-template-rows: repeat(1, 1fr);*/
+/*  }*/
+/*}*/
 
 @media screen and (max-width: 472px) {
   .news__title {

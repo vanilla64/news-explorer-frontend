@@ -1,12 +1,12 @@
 import React from 'react';
 import './NewsCardList.css';
 import NewsCard from "../NewsCard/NewsCard";
-import cardImgFirst from '../../images/card/card/image_08.png'
-import cardImgSecond from '../../images/card/card/image_04.png'
-import cardImgThird from '../../images/card/card/image_07.png'
 import Button from "../Button/Button";
 
 function NewsCardList(props) {
+  const newsList = props.newsList
+  console.log(newsList)
+
   return (
     <section>
       <section className={
@@ -15,94 +15,32 @@ function NewsCardList(props) {
       }>
         <h2 className='news__title'>Результаты поиска</h2>
         <ul className="news-list">
-          <NewsCard
-            title={'Национальное достояние – парки'}
-            keyword={'Keyword'}
-            text={'В 2016 году Америка отмечала важный юбилей: ' +
-            'сто лет назад здесь начала складываться система национальных парков ' +
-            '– охраняемых территорий, где и сегодня каждый может приобщиться к природе.'}
-            date={'2 августа, 2019'}
-            source={'Лента.ру'}
-            link={'link'}
-            image={cardImgFirst}
-            isSaved={false}
-            isLoggedIn={props.isLoggedIn}
-          />
-          <NewsCard
-            title={'Лесные огоньки: история одной фотографии'}
-            keyword={'Keyword'}
-            text={'Фотограф отвлеклась от освещения суровой политической реальности Мексики, ' +
-            'чтобы запечатлеть ускользающую красоту одного' +
-            'из местных чудес природы.'}
-            date={'2 августа, 2019'}
-            source={'Медуза'}
-            link={'link'}
-            image={cardImgSecond}
-            isSaved={false}
-            isLoggedIn={props.isLoggedIn}
-          />
-          <NewsCard
-            title={'«Первозданная тайга»: новый фотопроект Игоря Шпиленка'}
-            keyword={'Keyword'}
-            text={'Знаменитый фотограф снимает первозданные леса России, ' +
-            'чтобы рассказать о необходимости их сохранения. ' +
-            'В этот раз он отправился в Двинско-Пинежскую тайгу, где ' +
-            'В этот раз он отправился в Двинско-Пинежскую тайгу, где ' +
-            'В этот раз он отправился в Двинско-Пинежскую тайгу, где '}
-            date={'2 августа, 2019'}
-            source={'Риа'}
-            link={'link'}
-            image={cardImgThird}
-            isSaved={false}
-            isLoggedIn={props.isLoggedIn}
-          />
-          <NewsCard
-            title={'Национальное достояние – парки'}
-            keyword={'Keyword'}
-            text={'В 2016 году Америка отмечала важный юбилей: ' +
-            'сто лет назад здесь начала складываться система национальных парков ' +
-            '– охраняемых территорий, где и сегодня каждый может приобщиться к природе.'}
-            date={'2 августа, 2019'}
-            source={'Лента.ру'}
-            link={'link'}
-            image={cardImgFirst}
-            isSaved={false}
-            isLoggedIn={props.isLoggedIn}
-          />
-          <NewsCard
-            title={'Национальное достояние – парки'}
-            keyword={'Keyword'}
-            text={'В 2016 году Америка отмечала важный юбилей: ' +
-            'сто лет назад здесь начала складываться система национальных парков ' +
-            '– охраняемых территорий, где и сегодня каждый может приобщиться к природе.'}
-            date={'2 августа, 2019'}
-            source={'Лента.ру'}
-            link={'link'}
-            image={cardImgFirst}
-            isSaved={false}
-            isLoggedIn={props.isLoggedIn}
-          />
-          <NewsCard
-            title={'Национальное достояние – парки'}
-            keyword={'Keyword'}
-            text={'В 2016 году Америка отмечала важный юбилей: ' +
-            'сто лет назад здесь начала складываться система национальных парков ' +
-            '– охраняемых территорий, где и сегодня каждый может приобщиться к природе.'}
-            date={'2 августа, 2019'}
-            source={'Лента.ру'}
-            link={'link'}
-            image={cardImgFirst}
-            isSaved={false}
-            isLoggedIn={props.isLoggedIn}
-          />
+          {
+            newsList.map((newsCard, i = 0) => (
+              <NewsCard
+                key={i++}
+                title={newsCard.title}
+                keyword={props.keyword}
+                text={newsCard.description}
+                date={newsCard.publishedAt}
+                source={newsCard.source.name}
+                link={newsCard.url}
+                image={newsCard.urlToImage}
+                isSaved={false}
+                isLoggedIn={props.isLoggedIn}
+                newsCard={newsCard}
+                token={props.token}
+                onBookmarkClick={props.onBookmarkClick}
+              />
+            ))
+          }
         </ul>
-        <Button
-          classType={'news'}
-        >
-          <>
-            <p className="button__text">Показать еще</p>
-          </>
-        </Button>
+        {
+          props.isShowMoreButtonVisible ?
+          <Button classType={'news'} onClick={props.onShowMoreClick}>
+            <><p className="button__text">Показать еще</p></>
+          </Button> : <></>
+        }
       </section>
     </section>
 

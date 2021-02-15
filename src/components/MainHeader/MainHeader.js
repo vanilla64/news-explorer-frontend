@@ -11,7 +11,7 @@ function MainHeader(props) {
       isLoggedIn={props.isLoggedIn}
       isCross={props.isCross}
       logo={logoWhite}
-      userName={props.userName}
+      // userName={props.userName}
       onOpenLoginPopup={props.onOpenLoginPopup}
       onBurgerClick={props.onBurgerClick}
     >
@@ -22,6 +22,7 @@ function MainHeader(props) {
         </p>
         <SearchForm
           onNewsVisible={props.onNewsVisible}
+          onSearchFormChange={props.onSearchFormChange}
         />
       </>
     </Header>

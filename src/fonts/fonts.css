@@ -3,7 +3,7 @@
   font-style:  normal;
   font-weight: 400;
   font-display: swap;
-  src: url('./inter-regular.woff') format('woff');
+  src: url('./inter-regular-font.woff') format('woff');
 }
 
 @font-face {
@@ -36,4 +36,12 @@
   font-weight: normal;
   font-display: swap;
   src: url('./robotoslab-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('./sourcesanspro-regular.woff') format('woff');
 }
